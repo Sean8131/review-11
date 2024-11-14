@@ -3,36 +3,70 @@
 ## Answer 1 Create a Simple Component
 
 ```js
-// Write your code here
+function Intro() {
+    return <h1>Intro to React!</h1>;
+}
 ```
 
 ## Answer 2 Create a Bigger Component
 
 ```js
-// Write your code here
+function Ciao() {
+return (
+<>
+<p>Ciao</p>
+<p>Mundo</p>
+</div>
+</>
+);
+}
 ```
 
 ## Answer 3 Create an Image Component
 
 ```js
-// Write your code here
+function LoginButton() {
+return (
+<>
+<div>
+<img src='../assets/images/profile-picture.jpg' />
+<button>Sign out</button>
+</div>
+</>
+);
+}
 ```
 
 ## Answer 4 Create a Component that Uses Variables
 
 ```js
-const username = "john_doe";
-const xp = 737451;
+
+function User() {
+  const username = "john_doe";
+  const xp = 737451;
+  return (
+    <>
+    <div>{username}</div>
+    <div>{xp}</div>
+    <>
+  );
+}
 
 // Write your code here
 ```
 
 ## Answer 5 Is the Code Correct? Components
 
+```
+The FoodList component will render an h1 "Bananas", and then three lists that each say "1. Green Banana"
+```
+
 ## Answer 6 Export a Component
 
 ```js
 // Modify the code below
+
+import React from 'react';
 
 const ChapterList = () => {
   return (
@@ -49,13 +83,26 @@ const ChapterList = () => {
     </div>
   );
 };
+
+export default ChapterList;
 ```
 
 ## Answer 7 Import a Component
 
 ```js
 // This is the App.jsx file
-// Write your code here
+
+import Gallery from './components/Gallery.jsx';
+
+function App() {
+  return (
+    <div>
+      <Gallery></Gallery>
+    </div>
+  );
+}
+
+export default App;
 ```
 
 ## Answer 8 Is the Code Correct? JSX
@@ -67,10 +114,10 @@ const ChapterList = () => {
 
 const Summary = () => {
   return (
-    <div class="title">
+    <div className="Title">
       <h1>My Site!</h1>
     </div>
-    <p class="description">
+    <p className="Description">
       You can find my thoughts here
       <br>
       <b>And <i>I</b></i> have plenty of them!
@@ -82,17 +129,21 @@ const Summary = () => {
 ## Answer 10 Create a Component with a Prop
 
 ```js
-// Write your code here
+// Out of time
 ```
 
 ## Answer 11 Pass a Prop to a Component
 
 ```js
 const App = () => {
-  // Add your Greeting component here
+  // Out of time
 };
 ```
 
 ## Answer 12 Denise's chat
+
+```
+Don't use a password manager
+```
 
 
